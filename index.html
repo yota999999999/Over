@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Overlay Lumba TikTok</title>
+
+<style>
+body{
+    margin:0;
+    overflow:hidden;
+    background:white;
+    width:100vw;
+    height:100vh;
+}
+
+/* LUMBA */
+.lumba{
+    position:absolute;
+    width:80px;
+    opacity:0.9;
+    animation-name: kananKeKiri;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* GERAK KANAN ➜ KIRI */
+@keyframes kananKeKiri{
+    0%{
+        left:110vw;
+    }
+    100%{
+        left:-120px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<img src="lumba.png" class="lumba" style="top:20%; animation-duration:18s;">
+<img src="lumba.png" class="lumba" style="top:45%; animation-duration:22s;">
+<img src="lumba.png" class="lumba" style="top:70%; animation-duration:26s;">
+
+</body>
+</html>
